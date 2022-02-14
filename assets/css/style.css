@@ -1,0 +1,537 @@
+/*
+Theme Name: Landing Page Kenzie Academy
+Theme URI: https://kenzie.com.br/
+Author: Kenzie Academy 
+Author URI: https://kenzie.com.br/
+Description: Descrção do thema.
+Version: 1.0
+Text Domain: https://kenzie.com.br/
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+family=Montserrat -> Menus
+family=Lato -> Títulos, textos
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONTS */
+
+/* VARIÁVEIS */
+:root{}
+  
+/* GERAL */
+html, body, figure, div, input, textarea, p, h1, h3, h4, h5, h6, ul:not(h2, .lista){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    list-style: none;
+}
+img{
+    max-width: 800px;
+}
+div.flex{
+    display: flex;
+}
+div.full-container{
+    width: 100%;
+    max-width: 1850px;
+    margin:0 auto;
+}
+div.large-container{
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+}
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+.secaoSobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.secaoSobre h2{
+    margin: auto;
+    margin-bottom: 80px;
+    width: 200px;
+}
+.secaoSobre .flex-col p{
+    text-align: left;
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.span{
+    display: flex;
+    text-align: left;
+    line-height: 25px;
+}
+.secaoSobre span, ul{
+    color: #303030;
+}
+.secaoSobre li{
+    margin: auto;
+    text-align: left;
+    line-height: 40px;
+    font-size: 19px;
+}
+.secaoSobre figcaption{
+    display: none;
+}
+.flex-col:nth-child(1){
+    width: 55%;
+}
+.linha1:nth-child(1) img{
+    margin-bottom: 50px;
+    width: 320px;
+}
+.flex-col:nth-child(1) img{
+    width: 200px;
+}
+.linha1:nth-child(2){
+    background-color: #f6f6f6;
+    padding: 20px 0px 20px 0px;
+    
+}
+
+.linha1:nth-child(2).flex-col:nth-child(1){
+    width: 50%;
+}
+
+.secaoSobre button{
+    background-color:#FFFFFF;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 19px;
+    padding: 15px 0;
+    width: 80%;
+    margin: 60px 0px 40px 0px;
+}
+.secaoSobre button:hover{
+    background-color:#11e751;
+    border: transparent;
+    color: white;
+    font-weight: bolder;
+}
+.secaoCursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.secaoCursos img{
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+    object-fit: contain; 
+}
+.secaoCursos p{
+    color: #303030;
+    font-size: 15px;
+}
+.secaoCursos h3{
+    font-weight: 500;
+    margin: 10px 0 40px 0;
+    font-size: 19px;
+}
+.secaoCursos p:nth-last-child(){
+    margin-bottom: 100px;
+}
+
+footer{
+    display: none;
+}
+.seta{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.seta img{
+    width: 40px;
+}
+.seta img:hover{
+    transform: scale(1.5);
+}
+
+.linha1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0px;
+}
+.linha1 h2{
+    font-size: 24px;
+}
+.linha1 p, span{
+    font-size: 19px;
+}
+
+/* GERAL */
+  
+/* HTML */
+html{}
+/* HTML */
+  
+/* BODY */
+body{font-family: Lato, sans-serif;}
+/* BODY */
+  
+/* HEADER */
+header{}
+/* HEADER */
+  
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+/* INICIAL */
+main{}
+/* INICIAL */
+
+/* EXTRAS */
+
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+/* EXTRAS */
+h2{font-family: Montserrat, sans-serif;font-weight: normal;}
+
+header > .large-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #00043e;
+} 
+header > .large-container > .logo{
+    height: 50px;
+    width: 50px;
+}
+header > .large-container > nav > .menu{display: none;}
+header > .large-container > nav > #btn-menu{display: none;}
+header > .large-container > nav > #fake-btn-menu > img{
+    height: 25px;
+    width: 25px;
+}
+.inicial > .secaoDestaque{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    /* background-color: #00043e; */
+    background-image: url(../img/background-destaque.webp);
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    gap: 1em;
+    box-sizing: border-box;
+    height: 300px;
+}
+.inicial > .secaoDestaque > h2{font-size: 33px;margin: 0;}
+.inicial > .secaoDestaque > p{font-size:21px;}
+.inicial > .secaoDestaque > .secaoDestaqueFormulario{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.inicial > .secaoDestaque > .secaoDestaqueFormulario > input{
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px;
+    padding-left: 10px;
+}
+.inicial > .secaoDestaque > .secaoDestaqueFormulario > button{
+    border-radius: 5px;
+    border-style: outset;
+    background-color: #007aff;
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0px 15px 0 15px;
+}
+.inicial > .secaoDestaque > .secaoDestaqueFormulario > button:hover{
+    background-color:#11e751;
+    border: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+/* BONUS */
+.secaoContato{
+    margin-top: 40px;
+    background-color: #f6f6f6;
+}
+.secaoContato h2{
+    color: #303030;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.secaoContato > .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: .5rem;
+    line-height: 35px;
+    font-family: Lato, sans-serif;
+    color: #8f8e8e;
+}
+.secaoContato > .flex > .flex-col > .contatoDesktop{
+    display: none;
+}
+.secaoContato > .flex > .flex-col > .secaoContato-informacoes{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+.secaoContato > .flex > .flex-col > .secaoContato-informacoes > ul > li > img{
+    width: 20px;
+}
+.secaoContato > .flex > .flex-col > .secaoContato-informacoes > ul > li > a{
+    text-decoration: none;
+    color: #8f8e8e;
+}
+.secaoContato > .flex > .flex-col > .secaoContato-informacoes > ul > li > i{
+    color: #8f8e8e;
+}
+.textBox{
+    font-family: Lato, sans-serif;
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: 1px solid #9b9a9a;
+    margin-bottom: 10px;
+}
+.textArea{
+    font-family: Lato, sans-serif;
+    height: 100px;
+    width: 200px;
+    border-radius: 3px;
+    padding: 7px 0px 0px 10px;
+    border: 1px solid #9b9a9a;
+    margin-bottom: 10px;
+}
+.btnEnviar{
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #303030;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 0px 15px 0px 15px;
+    border: 1px solid #9b9a9a;
+    float: right;
+    margin-bottom: 20px;
+}
+label{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+    @media screen and (min-width: 350px) {
+        .linha1:nth-child(1) img{
+            width: 350px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        header{
+            background-color: #00043e;
+        }
+        header > .large-container{
+            display: flex;
+            align-items: center;
+        } 
+        header > .large-container > .logo{
+            height: 50px;
+            width: 50px;    
+        } 
+        header > .large-container > nav > .menu{
+            display: flex;
+            list-style: none;
+            gap: .5em;
+        }
+        header > .large-container > nav > #fake-btn-menu{
+            display: none;
+        }
+        header > .large-container > nav > #btn-menu{
+            display: none;
+        }        
+        header > .large-container > nav > .menu > li > a{
+            font-size:13px;
+            text-decoration: none; 
+            margin: 0px;
+            color: #f6f6f6;
+            display: block;
+            padding: .5rem;
+            font-family: Lato, sans-serif;
+        }
+        .inicial > .secaoDestaque{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            color: #FFFFFF;
+            background-color: #00043e;
+            gap: 1em;
+            box-sizing: border-box;
+            height: 550px;
+        }
+        .inicial > .secaoDestaque > h2{
+            font-size: 63px;
+            font-weight: normal;
+            margin: 0;
+        } 
+        .inicial > .secaoDestaque > .secaoDestaqueFormulario{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .inicial > .secaoDestaque > .secaoDestaqueFormulario > input{
+            height: 30px;
+            width: 230px;
+            border-radius: 5px;
+            padding-left: 10px;
+            width: 65vh;
+        }
+        .inicial > .secaoDestaque > .secaoDestaqueFormulario > button{
+            height: 30px;
+            border-radius: 5px;
+            border-style: outset;
+            background-color: #007aff;
+            color: #FFFFFF;
+            font-weight: lighter;
+            font-family: Leto, sans-serif;
+            box-sizing: border-box;
+            font-size: 14px;
+            padding: 0px 15px 0 15px;
+        }    
+        .linha1 .flex-col{
+            width: 400px;
+        }
+        .linha1 button{
+            display: flex;
+            justify-content: center;
+        }
+        .secaoSobre .linha1:nth-child(2){
+            width: 100vw;
+            background-color: #f6f6f6;
+        }
+        .linha1 .flex-col:nth-child(1) h2{
+            margin-left: auto;
+            width: 100%;
+        }
+        .linha1 .flex-col:nth-child(2) img{
+            width: 330px;
+        }
+        .linha1 .flex-col:nth-child(2){
+            width: 40%;
+        }
+        .linha1 .flex-col:nth-child(2) h2{
+            width: 100%;
+        }
+        .secaoSobre button{
+            width: 150px;
+        }
+
+
+        .secaoCursos ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 110px;
+        }
+
+        footer{
+            display: initial;
+            text-align: center;
+        }
+
+        /* BONUS */
+        .secaoContato{
+            width: 100%;
+        }
+        .secaoContato > .flex{
+            flex-direction: row;
+            width: 100%;
+            padding: 10px;
+        }
+        .secaoContato > .flex > .flex-col{
+            width: 100%;
+        }
+        .secaoContato > .flex > .flex-col > .secaoContato-informacoes > .contatoMobile{
+            display: none;
+        }
+        .secaoContato > .flex > .flex-col > .contatoDesktop{
+            display: initial;
+        }
+        .secaoContato > .flex > .flex-col > .secaoContato-informacoes{
+            align-items: stretch;
+            max-width: 400px;
+        }
+        .ladoalado{
+            display: flex;
+            margin: auto;
+            gap: 1rem;
+            width: 100%;
+        }
+        .ladoalado > .form-input-model{
+            width: 100%;
+        }
+        .textBox{
+            width: 100%;
+        }
+        .textArea{
+            width: 100%;
+        }
+        .btnEnviar{
+            border-radius: 3px;
+            background-color: #ffffff;
+            color: #303030;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+            height: 35px;
+            padding: 0px 15px 0 15px;
+            border: 1px solid #9b9a9a;
+            float: right;
+        }
+        label{
+            display: none;
+        }
+    }
+/* MEDIA QUERIES */
